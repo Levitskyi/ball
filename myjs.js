@@ -17,6 +17,7 @@ $(document).ready(function(){
 	$('.stage_ball_fly').show();
 	$('.fly_bubble1').show();
 	$(this).hide();
+	for(var i = 0; i<100;i++){
 	$('.stage_ball_fly').animate({
 		left:'100px',
 		top:'300px'
@@ -36,18 +37,10 @@ $(document).ready(function(){
 		left:'0px',
 		top:'100px'
 	},4000);
-
+	}
 	});
 	$('.fly_bubble1').click(function(){
-		$('.stage_ball_fly').stop();
-		$('.stage_ball_fly').stop();
-		$('.stage_ball_fly').stop();
-		$('.stage_ball_fly').stop();
-		$('.stage_ball_fly').stop();
-		$('.stage_ball_fly').stop();
-		$('.stage_ball_fly').hide(2000);
-		$(this).hide();
-		$('button.fly_bubble').show();			
+	location.reload();		
 	});  // flying bubble
 	
 	
